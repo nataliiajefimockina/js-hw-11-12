@@ -1,0 +1,156 @@
+.carousel {
+    width: 832px;
+    margin: 30px auto;
+    clear: both;
+    text-align: center;
+}
+
+.carousel-hider {
+    width: 675px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-list {
+    position: relative;
+    width: 10000px;
+    padding: 0px;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 150px;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    display: block;
+    margin-top: 75px;
+    padding: 10px;
+    float: left;
+    border: 1px solid #333;
+    background-color: #f3f3f3;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.description {
+    width: 150px;
+    margin-top: 15px;
+}
+
+
+/*template*/
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+h3 {
+    margin: 15px 0 20px;
+    font-weight: bold;
+}
+
+p {
+    width: 337px;
+}
+
+ul span  {
+    padding-right: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+a {
+    color: #0056d3;
+    font-style: italic;
+}
+
+.template {
+    padding-top: 300px;
+}
+
+.personal_info {
+    width: 512px;
+    height: 707px;
+    margin: 10px auto;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.container {
+    margin: 0 50px;
+    padding: 29px 12px 17px;
+}
+
+.underlined {
+    border-bottom: 1px solid #000;
+}
+
+.student-name {
+    margin: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.student-avatar {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid #8f8f8f;
+}
+
+.student-description {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.study-reason-list {
+    padding: 0 24px;
+}
+
+.study-reason-list li {
+    margin-bottom: 8px;
+}
+
+.study-reason-list li:last-child {
+    margin-bottom: 0;
+}
+
+.telephone-number {
+    padding-left: 37px;
+    color: #1f1f1f;
+}
+.profile h3 {
+    margin-top: 11px;
+    margin-bottom: 21px;
+}
+
+.link {
+    display: block;
+    padding-left: 37px;
+    font-size: 17px;
+}
+
+.feedback-text {
+    padding-left: 37px;
+}

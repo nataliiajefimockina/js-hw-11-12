@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Карусель jQuery</title>
+        <link rel="stylesheet" href="css/kosher-reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/tmpl.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <section class="carousel">
+            <div class="carousel-arrow-left"><span>Left</span></div>
+            <div class="carousel-hider">
+                <ul class="carousel-list">
+                    <li class="carousel-element"><img src="img/image1.jpg" alt="The Temple of Artemis"><p class="description">The Temple of Artemis</p></li>
+                    <li class="carousel-element"><img src="img/image2.jpg" alt="The Hanging Gardens of Semiramis"><p class="description">The Hanging Gardens of Semiramis</p></li>
+                    <li class="carousel-element"><img src="img/image3.jpg" alt="The Colossus of Rhodes"><p class="description">The Colossus of Rhodes</p></li>
+                    <li class="carousel-element"><img src="img/image4.jpg" alt="The Lighthouse of Alexandria"><p class="description">The Lighthouse of Alexandria</p></li>
+                    <li class="carousel-element"><img src="img/image5.jpg" alt="The Mausoleum at Halicarnassus"><p class="description">The Mausoleum at Halicarnassus</p></li>
+                    <li class="carousel-element"><img src="img/image6.jpg" alt="The Great Pyramid of Cheops"><p class="description">The Great Pyramid of Cheops</p></li>
+                    <li class="carousel-element"><img src="img/image7.jpg" alt="The Statue of Zeus at Olympia"><p class="description">The Statue of Zeus at Olympia</p></li>
+                </ul>
+            </div>
+            <div class="carousel-arrow-right"><span>Right</span></div>
+        </section>
+
+        <section class="template">
+            <script type="text/html" id="resumeTemplate">
+                <section class="personal_info">
+                    <section class="container underlined">
+                        <h1 class="student-name"><%= name %></h1>
+                        <img class="student-avatar" src="<%= photo.src %>" alt="<%= photo.alt %>">
+                        <p class="student-description"><%= status %></p>
+                    </section>
+
+                    <section class="container underlined">
+                        <h3>Хочу учить фронтенд потому что:</h3>
+                        <ul class="study-reason-list">
+                            <% for (var i = 0; i < reasons.length; i++) { %>
+                            <li><span>&#8226;</span><%= reasons[i] %></li>
+                            <% }; %>
+                        </ul>
+                    </section>
+
+                    <section class="container underlined">
+                        <div class="phone">
+                            <h3>Мой контактный телефон</h3>
+                            <address class="telephone-number"><%= number %></address>
+                        </div>
+                        <div class="profile">
+                            <h3>Мой профиль в Facebook:</h3>
+                            <address class="link"><a href="<%= link %>" target="_blank"><%= socialNetwork %></a></address>
+                        </div>
+                    </section>
+
+                    <section class="container">
+                        <h3>Мой фидбек:</h3>
+                        <p class="feedback-text"><%= feedback %></p>
+                    </section>
+                </section>
+            </script>
+        </section>
+    </body>
+</html>
